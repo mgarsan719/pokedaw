@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "81ae8ce8-7c86-4164-aad5-a43adf5590d2",
+    "name": "pokedaw",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52616738",
+    "_collection_link": "https://go.postman.co/collection/52616738-81ae8ce8-7c86-4164-aad5-a43adf5590d2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "/pokemon",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"capturado\": \"SUPERBALL\",\r\n    \"fechaCaptura\": \"2023-12-05\",\r\n    \"nombre\": \"Juan de la Palmilla\",\r\n    \"numeroPokedex\": 101,\r\n    \"tipo1\": \"FANTASMA\",\r\n    \"tipo2\": \"LUCHA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/pokemon",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/{id}",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"capturado\": \"SUPERBALL\",\r\n    \"fechaCaptura\": \"2023-12-05\",\r\n    \"nombre\": \"Juan de la Palmilla SHINY\",\r\n    \"numeroPokedex\": 777,\r\n    \"tipo1\": \"FANTASMA\",\r\n    \"tipo2\": \"LUCHA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/pokemon/101",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "101"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/11",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/pokedex",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/fecha",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/fecha?inicio=2023-10-01&fin=2023-10-15",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "fecha"
+          ],
+          "query": [
+            {
+              "key": "inicio",
+              "value": "2023-10-01"
+            },
+            {
+              "key": "fin",
+              "value": "2023-10-15"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/pokemon/tipo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/tipo?tipo=FANTASMA",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "tipo"
+          ],
+          "query": [
+            {
+              "key": "tipo",
+              "value": "FANTASMA"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
