@@ -76,8 +76,9 @@ public class PokeService {
 		return this.pokeRepository.findByFechaCapturaBetween(inicio, fin);
 	}
 
-	public List<PokeEntity> findByTipo(Tipo tipo) {
-		return this.pokeRepository.findByTipo1OrTipo2(tipo, tipo);
+	public List<PokeEntity> findByTipo(String tipo) {
+		Tipo tipoEnum = Tipo.valueOf(tipo);
+		return this.pokeRepository.findByTipo1OrTipo2(tipoEnum, tipoEnum);
 	}
 
 }
